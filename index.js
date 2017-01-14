@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const decaf = require('decaffeinate')
 
 // npm install decaffeinate glob
-const currentDirectory = path.join(__dirname, './**/*')
+const currentDirectory = path.join(process.cwd(), './**/*')
 console.log(chalk.green('Directory:'), chalk.yellow(currentDirectory))
 
 glob(currentDirectory, function( err, files ) {

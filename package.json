@@ -1,12 +1,14 @@
 {
   "name": "cs2es",
   "main": "index.js",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "author": "Ryan Megidov <ryan@megidov.com>",
   "description": "Convert coffeescript to ES6",
   "license": "UNLICENSED",
   "main": "index.js",
-  "bin": "./bin/cs2es.js",
+  "bin": {
+	"cs2es": "./bin/cs2es"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "mocha"
